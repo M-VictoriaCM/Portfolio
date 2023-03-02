@@ -1,0 +1,161 @@
+:root {
+    --header: 4rem;
+    /* colores */
+    --color_primary: #D302A5;
+    --color_primary_dark: #89006B;
+    --color_primary_light: #FD73DE;
+    --color_second_dark: #01828E;
+    --color_second: #03D4E7;
+    --color_second_light: #5DDFEB;
+    /* color body */
+    --body_dark: #161A2E;
+    --header_dark: #09021A;
+    --color_font: #FBFBFE;
+    --color_acent: #24C115;
+    /* color iconos*/
+    --color_icon_inactive: rgb(217, 217, 217, 0.6);
+
+    /* margenes */
+    --m-4: 0.25rem;
+    --m-8: 0.5rem;
+    --m-12: 0.75rem;
+    --m-16: 1rem;
+    --m-20: 1.25rem;
+    --m-24: 1.5rem;
+    --m-28: 1.75rem;
+    --m-32: 2rem;
+    --m-36: 2.25rem;
+    --m-40: 2.5rem;
+    --m-44: 2.75rem;
+    --m-48: 3rem;
+    --m-52: 3.25rem;
+    --m-56: 3.5rem;
+    --m-60: 3.75rem;
+    --m-64: 4rem;
+    --m-68: 4.25rem;
+    --m-72: 4.5rem;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    /* tamaño de letras */
+    --font-small: 1.5rem;
+}
+
+
+/* --------------- Estilos Generales  ---------------*/
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    grid-column-end: span 4;
+    /*    border: 1px solid white;*/
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: var(--body_dark);
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    column-gap: var(--m-12);
+    overflow: hidden;
+    align-items: center;
+}
+
+main {
+    margin-top: var(--header);
+}
+
+.section {
+
+    margin: var(--m-16);
+    overflow: hidden;
+    height: calc(100% - var(--header));
+}
+::-webkit-scrollbar {
+        width:10px;
+        background-color: var(--header_dark);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--color_second_light);
+        border-radius: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--color_second);
+    }
+
+/* -------------------------------- Header----------------------------------- */
+
+
+
+.footer {
+    display: none;
+}
+
+/*------------ MEDIA QUERIES Medium devise and Large devise------------*/
+@media (min-width: 599px) and (max-width: 1023px) {
+    .section {
+        margin: var(--m-24);
+
+    }
+
+    .grid__container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+        column-gap: var(--m-16);
+    }
+
+    .content {
+        grid-column-end: span 6;
+    }
+
+    
+
+
+
+
+}
+
+/*------------ MEDIA QUERIES:Extra large devise ------------*/
+@media screen and (min-width: 1024px) {
+    .section {
+        flex-direction: column;
+        margin: var(--m-48);
+    }
+
+    .grid__container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+        column-gap: var(--m-24);
+    }
+
+    .content {
+        grid-column-end: span 12;
+    }
+
+   
+
+    
+
+
+}

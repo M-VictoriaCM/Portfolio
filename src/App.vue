@@ -1,30 +1,26 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="grid__container">
+    <!--Componente del header-->
+      <header-section></header-section>
+
+    <main class="content">
+      <section class="section" id="home">
+        <!--vista de las opciones del menu-->
+          <router-view></router-view>
+      </section>
+    </main>
+  </div>
 </template>
+<script>
 
+  import HeaderSection from "./components/Header";
+  export default {
+    components: 
+      {HeaderSection},
+  };
+
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+    @import "assets/css/style.css";
+  
 </style>

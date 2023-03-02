@@ -1,0 +1,105 @@
+.nav__list,
+    .nav__link {
+        display: flex;
+    }
+
+    .nav__link {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .nav__link {
+        color: var(--color_icon_inactive);
+        font-weight: 200;
+        width: var(--m-64);
+        text-align: center;
+        margin: var(--m-8) 0;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        justify-content: space-around;
+        width: inherit;
+    }
+
+    .nav__icon {
+        font-size: var(--m-24);
+    }
+
+    .nav__name {
+        font-size: 0.875rem;
+    }
+
+    .router-link-exact-active {
+        color: var(--color_primary);
+        transition: .3s;
+    }
+
+
+    /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
+    @media (min-width: 599px) and (max-width: 1023px) {
+        .nav__list {
+            display: flex;
+        }
+
+        .nav_icon {
+            display: none;
+        }
+
+        .nav__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav__link {
+            margin-top: var(--m-12);
+            width: 50vw;
+            top: 0;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            color: var(--color_icon_inactive);
+        }
+
+        .nav__name {
+            font-size: var(--m-20);
+            line-height: var(--m-20);
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .router-link-exact-active {
+            color: var(--color_second_dark);
+            border-bottom: 1px solid var(--color_primary_light);
+            transition: .5s;
+        }
+    }
+
+    /*------------ MEDIA QUERIES:Extra large devise ------------*/
+    @media screen and (min-width: 1024px) {
+        .nav__icon {
+            display: none;
+        }
+
+        .nav__link {
+            margin-right: var(--m-32);
+            width: 7.5rem;
+            top: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: var(--color_icon_inactive);
+
+        }
+
+        .nav__name {
+            font-size: var(--m-20);
+            line-height: var(--m-20);
+            text-align: center;
+            font-weight: 700;
+        }
+
+    }
