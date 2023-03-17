@@ -1,0 +1,128 @@
+.home__social-profile-content,
+.home__social,
+.home__img {
+    display: flex;
+}
+
+.home__social-profile {
+    margin-bottom: var(--m-32);
+}
+
+.home__social-profile-content {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.home__social {
+    flex-direction: column;
+    width: var(--m-32);
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--m-32);
+}
+
+.icon__social {
+    font-size: var(--m-32);
+    color: var(--color_primary);
+    margin: var(--m-24) 0;
+}
+
+.home__img {
+    /*    border: 1px solid yellow;*/
+    width: 18.75rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.home__frame {
+    width: 13.125rem;
+    height: 13.125rem;
+    border: 1px solid var(--color_primary);
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+
+}
+
+.home__frame-img>img {
+    position: absolute;
+    width: 12.6rem;
+    height: 12.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* Medias queries -----> small */
+@media screen and (min-width:280px) {
+    .home__social,
+        .home__img{
+        margin: var(--m-8);
+    }
+
+    .home__img {
+        padding: 0;
+    }
+
+}
+
+/*------------ MEDIA QUERIES Medium devise and Large devise------------*/
+@media (min-width: 599px) and (max-width: 1023px) {
+            .home__img {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 18.75rem;
+    }
+
+    .home__frame {
+        width: 15.5rem;
+        height: 15.5rem;
+    }
+
+    .home__frame-img>img {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .home__social-profile,
+    .home__img {
+        display: flex;
+    }
+
+    .home__social-profile {
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .home__social {
+        width: var(--m-40);
+        margin-right: var(--m-8);
+        margin-left: 0;
+        justify-items: self-start;
+    }
+
+
+    .icon__social:hover {
+        color: var(--color_second);
+    }
+
+    .home__img {
+        flex-direction: column;
+        justify-content: center;
+        width: 18.75rem;
+    }
+
+    .home__frame {
+        width: 16.875rem;
+        height: 16.875rem;
+    }
+
+    .home__frame-img>img {
+        width: 16.5625rem;
+        height: 16.5625rem;
+    }
+
+}

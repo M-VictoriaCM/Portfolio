@@ -5,7 +5,12 @@
                 <img src="../../public/logo_sitio_web_victoria.png" alt="logo" class="nav_img">
                 <a href="home.html" class="nav_logo">ictoria</a>
             </div>
-            <btn-bar></btn-bar>
+            <!--            <btn-bar></btn-bar>-->
+            <div class="bars__menu">
+                <span class="line1__bars-menu"></span>
+                <span class="line2__bars-menu"></span>
+                <span class="line3__bars-menu"></span>
+            </div>
             <div class="container-menu">
 
                 <div class="nav__menu" id="nav-menu">
@@ -36,15 +41,12 @@
 
 <script>
     import NavBar from '@/components/NavBar'
-    import BtnBar from '@/components/BtnBar'
-   
- 
-    
+
+
     export default {
         name: 'Header',
-        components:{
-            NavBar, 
-            BtnBar, 
+        components: {
+            NavBar,
         },
     };
 </script>
@@ -52,4 +54,5 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
     @import "../assets/css/components/header.css";
+    @import "../assets/css/components/btnBar.css";
 </style>

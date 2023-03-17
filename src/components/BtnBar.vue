@@ -1,3 +1,4 @@
+<!--
 <template>
     <div class="bars__menu">
         <span class="line1__bars-menu"></span>
@@ -14,5 +15,4 @@
 
 <style>
     @import "../assets/css/components/btnBar.css";
-    
-</style>
+</style>-->

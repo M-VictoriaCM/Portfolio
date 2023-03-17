@@ -1,0 +1,35 @@
+.home__container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: inherit;
+}
+
+.home__container-presentation {
+    grid-column: 4/4;
+    width: 100%;
+    height: 12.5rem;
+}
+
+/* Medias queries -----> small */
+@media screen and (min-width:280px) {
+    .home__container-home {
+        margin: 0 var(--m-4) 0 var(--m-4);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .home__container-home,
+    .home__container-presentation {
+        display: flex;
+    }
+
+    .home__container-home {
+        flex-direction: row;
+    }
+    .home__container-presentation {
+        grid-column: 6/12;
+        height: 500px;
+        align-items: center;
+    }
+}

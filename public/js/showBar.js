@@ -1,8 +1,4 @@
-//export default function showBar(){
-//   
-//}
-
- /*Menu tablet */
+/*Menu tablet */
 let navToggle = document.querySelector(".bars__menu");
 let navMenu = document.querySelector(".container-menu");
 
@@ -22,3 +18,5 @@ navToggle.addEventListener("click", () =>{
     
     
 });
+    
+    

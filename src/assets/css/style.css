@@ -88,8 +88,9 @@ main {
     overflow: hidden;
     height: calc(100% - var(--header));
 }
+/*Estilo del scrollbar*/
 ::-webkit-scrollbar {
-        width:10px;
+        width:var(--m-8);
         background-color: var(--header_dark);
     }
 
@@ -102,19 +103,11 @@ main {
         background-color: var(--color_second);
     }
 
-/* -------------------------------- Header----------------------------------- */
-
-
-
-.footer {
-    display: none;
-}
 
 /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
 @media (min-width: 599px) and (max-width: 1023px) {
     .section {
         margin: var(--m-24);
-
     }
 
     .grid__container {
@@ -129,10 +122,6 @@ main {
     }
 
     
-
-
-
-
 }
 
 /*------------ MEDIA QUERIES:Extra large devise ------------*/

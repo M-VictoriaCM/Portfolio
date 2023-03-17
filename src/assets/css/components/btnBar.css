@@ -35,3 +35,18 @@
     .activeline3__bars-menu {
         transform: rotate(-45deg) translate(-4px, 2px);
     }
+   
+@media (min-width: 599px) and (max-width: 1023px) {
+    .bars__menu{
+        display: block;
+    }
+     .container-menu__visible {
+        left: 0;
+    }
+}
+@media screen and (min-width: 1024px) {
+     .bars__menu {
+        display: none;
+    }
+    
+}

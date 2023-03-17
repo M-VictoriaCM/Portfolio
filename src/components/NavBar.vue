@@ -8,11 +8,11 @@
         </li>
 
         <li class="nav__item">
-            <router-link class="nav__link" :to="{ name: 'home' }">
+            <router-link class="nav__link" :to="{ name: 'skills' }">
                 <i class="fa-solid fa-book nav__icon"></i>
                 <span class="nav__name">Skills</span>
             </router-link>
-        </li>
+        </li> 
 
         <li class="nav__item">
             <a href="#contacto" class="nav__link">

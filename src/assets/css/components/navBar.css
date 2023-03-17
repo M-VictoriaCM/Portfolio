@@ -12,7 +12,7 @@
 
     }
 
-    .nav__link {
+    .nav__link{
         color: var(--color_icon_inactive);
         font-weight: 200;
         width: var(--m-64);
@@ -33,6 +33,7 @@
     .nav__name {
         font-size: 0.875rem;
     }
+    
 
     .router-link-exact-active {
         color: var(--color_primary);
@@ -100,6 +101,12 @@
             line-height: var(--m-20);
             text-align: center;
             font-weight: 700;
+        }
+        .router-link-exact-active{
+            height:80%;
+            border-left: 1px solid var(--color_second);
+            border-right: 1px solid var(--color_second);
+            color: var(--color_primary);
         }
 
     }
