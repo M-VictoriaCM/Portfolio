@@ -3,35 +3,46 @@
        <!--------------- Skills: Frontend --------------->
         <div class="skills__header">
             <i class="fa-solid fa-laptop-code skills__icon"></i>
-            <h1 class="skills__title">Frontend</h1>
+            <title-skills
+            name= "Frontend"
+            />
+            
         </div>
             <skills-frontend/> 
             
         <!--------------- Skills: Backend --------------->
         <div class="skills__header">
             <i class="fa-solid fa-server skills__icon"></i>
-            <h1 class="skills__title">Backend</h1>
+            <title-skills
+            name= "Backend"
+            />
         </div>
         <skills-backend/>
         
         <!--------------- Skills: Database --------------->
         <div class="skills__header">
             <i class="fa-solid fa-database  skills__icon"></i>
-            <h1 class="skills__title">DataBase</h1>
+            <title-skills
+            name= "DataBase"
+            />
         </div>
         <skills-data-base/>
         
         <!--------------- Skills: Design --------------->
         <div class="skills__header">
             <i class="fa-solid fa-swatchbook  skills__icon"></i>
-            <h1 class="skills__title">Design</h1>
+            <title-skills
+            name="Design"
+            />
         </div>
         <skills-design/>
         
         <!--------------- Skills:Tools --------------->
         <div class="skills__header">
            <i class="fa-solid fa-screwdriver-wrench skills__icon"></i>
-           <h1 class="skills__title">Tools</h1>
+           <title-skills
+            name= "Tools"
+            />
         </div>
         <skills-tools/>
        
@@ -43,6 +54,7 @@ import SkillsBackend from '@/components/SkillsBackend'
 import SkillsDataBase from '@/components/SkillsDataBase'
 import SkillsDesign from '@/components/SkillsDesign'
 import SkillsTools from '@/components/SkillsTools'
+import TitleSkills from '@/components/TitleSkills'
     
     export default {
         name: 'skills',
@@ -52,6 +64,7 @@ import SkillsTools from '@/components/SkillsTools'
             SkillsDataBase,
             SkillsDesign,
             SkillsTools,
+            TitleSkills,
         }
         
     }

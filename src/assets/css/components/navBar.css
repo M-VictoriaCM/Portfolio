@@ -43,6 +43,9 @@
 
     /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
     @media (min-width: 599px) and (max-width: 1023px) {
+        .nav__icon {
+            margin: var(--m-4);
+        }
         .nav__list {
             display: flex;
         }
@@ -103,9 +106,8 @@
             font-weight: 700;
         }
         .router-link-exact-active{
-            height:80%;
-            border-left: 1px solid var(--color_second);
-            border-right: 1px solid var(--color_second);
+            height:82.5%;
+            border: 1px solid var(--color_second);
             color: var(--color_primary);
         }
 

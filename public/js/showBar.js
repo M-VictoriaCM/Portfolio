@@ -13,7 +13,8 @@ navToggle.addEventListener("click", () =>{
     line1__bars.classList.toggle("activeline1__bars-menu");
     line2__bars.classList.toggle("activeline2__bars-menu");
     line3__bars.classList.toggle("activeline3__bars-menu");
-    /*Animación del menu bar*/
+    /*Animación del 
+    menu bar*/
     navMenu.classList.toggle("container-menu__visible");
     
     

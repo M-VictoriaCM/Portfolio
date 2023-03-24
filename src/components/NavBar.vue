@@ -22,7 +22,7 @@
         </li>
 
         <li class="nav__item">
-            <router-link class="nav__link" :to="{ name: 'home' }">
+            <router-link class="nav__link" :to="{ name: 'aboutme' }">
                 <i class="fa-solid fa-user nav__icon"></i>
                 <span class="nav__name">Sobre Mí</span>
             </router-link>
