@@ -56,21 +56,23 @@
     .card_info_skills {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: var(--m-28);
+        grid-gap: var(--m-24);
         grid-auto-rows: 150px;
     }
-    .skills__header{
+
+    .skills__header {
         margin-bottom: 16px;
-        margin-top:24px;
+        margin-top: 24px;
     }
 
 
 }
 
 @media screen and (min-width: 1024px) {
+
     .skills__title {
         font-size: var(--m-64);
-       
+
     }
 
     .skills__title {
@@ -112,13 +114,13 @@
     }
 
     .card_info_skills {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: var(--m-28);
-        grid-auto-rows: 140px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
     }
-    .skills__header{
+
+    .skills__header {
         margin-bottom: 32px;
         margin-top: 24px;
     }

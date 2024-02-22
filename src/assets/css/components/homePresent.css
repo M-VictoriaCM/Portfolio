@@ -2,33 +2,35 @@
     color: var(--color_primary);
     position: absolute;
     text-align: left;
-    font-size: var(--m-40);
+    margin-left: var(--m-16);
+    margin-top: var(--m-20);
 }
 
 .text {
-    font-size: var(--m-72);
+    font-size: 4.5rem;
     line-height: var(--m-72);
-    margin-left: 0;
+    margin: 0.5rem 0;
     font-weight: 800;
     /* Animación del texto*/
     color: transparent;
     /*    -webkit-text-stroke: 1px var(--color_primary);*/
     background: url(../../img/back2.png);
     -webkit-background-clip: text;
-    background-position: 0 0;
+    background-clip: text;
+    background-position : 0 0;
     animation: back 20s linear infinite;
+    width: 100%;    
 }
 
 .typed,
 .title {
-    font-size: var(--m-12);
+    font-size: var(--m-24);
 }
 .typed,
 .titulo,
 .title {
-    font-size: var(--m-16);
-}
-
+    font-size: var(--m-24);
+} 
 .typed,
 .title,
 .typed-text{
@@ -36,7 +38,6 @@
     color: var(--color_font);
     font-weight: 100;
 }
-
 .typed-cursor,
 .typed-cursor--blink{
     color: var(--color_primary);
@@ -62,22 +63,38 @@
 }
 
 /* Medias queries -----> small */
-@media screen and (min-width:280px) {
+@media screen and (max-width:320px) {
 
     .text-box {
-        margin: var(--m-8);
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        width: 280px;
+    }
+    .titulo{
+        width: 290px;
     }
 
     .text {
-        font-size: 4.2rem;
-        line-height: 4.2rem;
+        font-size: 3.9rem;
+        line-height: 3.9rem;
+        margin: 0;
+    }
+    .contenedor-texto {
+        width: 290px;
     }
 
     .typed,
     .title,
     .typed-text{
         /*Color efecto maquina de escribir */
-        font-size: 1.3rem;
+        font-size: var(--m-18);
+        font-weight: 100;
+    }
+    .typed-text{
+        /*Color efecto maquina de escribir */
+        width: 290px;
     }
 
 }
@@ -89,6 +106,9 @@
     .title,
     .typed-text {
         font-size: var(--m-24);
+    }
+    .text-box{
+        margin: 0;
     }
 
     .titulo {
@@ -123,7 +143,8 @@
         font-size: var(--m-32);
     }
 
-    .text-box {
+    .text-box{
+        right: 50px;
         width: 700px;
         height: 300px;
     }

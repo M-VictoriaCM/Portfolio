@@ -1,7 +1,7 @@
 <template>
     <ul class="content nav__list" id="nav-list">
         <li class="nav__item">
-            <router-link class="nav__link" :to="{ name: 'home' }">
+            <router-link class="nav__link active" :to="{ name: 'home' }">
                 <i class="fa-solid fa-house nav__icon"></i>
                 <span class="nav__name">Inicio</span>
             </router-link>
@@ -15,10 +15,10 @@
         </li> 
 
         <li class="nav__item">
-            <a href="#contacto" class="nav__link">
+            <router-link class="nav__link" :to="{ name: 'contacto' }">
                 <i class="fa-solid fa-paper-plane nav__icon"></i>
                 <span class="nav__name">Contacto</span>
-            </a>
+            </router-link>
         </li>
 
         <li class="nav__item">

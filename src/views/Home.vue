@@ -1,13 +1,12 @@
 <template>
-   <div class="home__container-home">
-        <!--Redes sociales-->
-        <home-social></home-social>
-        <!--info-->
-        <div class="home__container-presentation">
-        <home-present></home-present>
-        </div>
+  <div class="home__container-home">
+    <!--Redes sociales-->
+    <home-social></home-social>
+    <!--info-->
+    <div class="home__container-presentation">
+      <home-present></home-present>
+    </div>
   </div>
-  
 </template>
 
 <script>
@@ -19,13 +18,13 @@ import HomeSocial from '@/components/HomeSocial.vue'
 export default {
   name: 'home',
   components: {
-      HomePresent,
-      HomeSocial,
+    HomePresent,
+    HomeSocial,
   },
 }
 </script>
 
 <style>
-  @import "../assets/css/home.css";
+@import "../assets/css/home.css";
 </style>
 

@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "firebase": "^10.8.0",
     "timers-browserify": "^2.0.12",
-    "vue": "^3.2.13",
+    "vue": "^3.4.3",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {

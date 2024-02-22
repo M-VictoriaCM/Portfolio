@@ -19,6 +19,11 @@
                         id: 2,
                         name: 'PostgreSql',
                         src: require('@/assets/img/postgresql_icon.png')
+                    },
+                    {
+                        id: 3,
+                        name: 'MongoDb',
+                        src: require('@/assets/img/mongodb_icon.png')
                     }
                 ]
             }

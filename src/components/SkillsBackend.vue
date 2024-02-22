@@ -43,6 +43,11 @@
                         id: 6,
                         name: 'Go',
                         src: require('@/assets/img/go_icon.png')
+                    },
+                    {
+                        id: 7,
+                        name: 'Spring Boot',
+                        src: require('@/assets/img/spring_icon.png')
                     }
                 ]
             }

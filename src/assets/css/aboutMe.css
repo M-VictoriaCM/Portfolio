@@ -2,11 +2,10 @@
 .about__presentation {
     display: flex;
 }
-
-.about__container,
-.about__presentation {
-    border: 1px solid white;
+.about__container{
+    height: 100vh;
 }
+
 .about__presentation{
     flex-direction:column;
     justify-items: center;
@@ -23,7 +22,11 @@ span{
 span > p{
     color: var(--color_font);
     text-align: justify;
-    margin: var(--m-12) var(--m-8) var(--m-8);
+    margin: var(--m-12) var(--m-16);
+}
+.about__buttons{
+    text-align: center;
+    margin: 1rem 1rem 2rem;
 }
 .button{
     display: inline-block;
@@ -31,14 +34,30 @@ span > p{
     color: var(--color_second_light);
     padding: 16px;
     border-radius: 8px;
+    width: 200px;
+    height: 60px;
+}
+.text_buttons{
+    color: var(--body_dark);
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
 }
 .button:hover{
     background-color: var(--color_second_dark);
 }
+.info_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .button__icon{
-    font-size: 20px;
+    font-size: var(--m-24);
     margin-left: var(--m-0-5);
     transition: .3s;
+    color: var(--body_dark);
 }
 .button--flex{
     display: inline-flex;

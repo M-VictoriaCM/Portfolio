@@ -11,11 +11,11 @@
             </div>
             <!--perfil-->
             <div class="home__img">
-                <div class="home__frame">
-                    <div class="home__frame-img">
-                        <img src="@/assets/img/hola.png" alt="avatar">
-                    </div>
-                </div>
+                <div class="home__frame"></div>
+                <div class="home__frame-img">
+                    <img src="@/assets/img/hola.png" alt="avatar">
+                </div>    
+                
             </div>
         </div>
     </div>

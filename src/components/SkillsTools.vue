@@ -29,6 +29,21 @@
                         id: 4,
                         name: 'Jira',
                         src: require('@/assets/img/jira_icon.png')
+                    },
+                    {
+                        id: 5,
+                        name: 'Power Bi',
+                        src: require('@/assets/img/power_bi_icon.png')
+                    },
+                    {
+                        id: 6,
+                        name: 'Bootstrap',
+                        src: require('@/assets/img/bootstrap_icon.png')
+                    },
+                    {
+                        id: 7,
+                        name: 'Postman',
+                        src: require('@/assets/img/postman_icon.png')
                     }
                 ]
             }

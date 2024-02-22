@@ -4,6 +4,7 @@
       <header-section></header-section>
 
     <main class="content">
+      <fondo-animado></fondo-animado>
       <section class="section" id="home">
         <!--vista de las opciones del menu-->
           <router-view></router-view>
@@ -14,9 +15,11 @@
 <script>
 
   import HeaderSection from "./components/Header";
+  import FondoAnimado from "./components/FondoAnimado.vue";
   export default {
     components: 
       {HeaderSection},
+      FondoAnimado,
   };
 
 </script>

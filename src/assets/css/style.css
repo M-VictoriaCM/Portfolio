@@ -34,15 +34,12 @@
     --m-64: 4rem;
     --m-68: 4.25rem;
     --m-72: 4.5rem;
-
     /* z-index */
     --z-tooltip: 10;
     --z-fixed: 100;
     /* tamaño de letras */
     --font-small: 1.5rem;
 }
-
-
 /* --------------- Estilos Generales  ---------------*/
 * {
     padding: 0;
@@ -51,100 +48,75 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .content {
     grid-column-end: span 4;
     /*    border: 1px solid white;*/
 }
-
 ul {
     list-style: none;
 }
-
 a {
     text-decoration: none;
 }
-
 body {
     background: var(--body_dark);
+    width: 100%;
+    height: 100%;
 }
-
 .grid__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 100vw;
     column-gap: var(--m-12);
     overflow: hidden;
     align-items: center;
 }
-
 main {
     margin-top: var(--header);
 }
-
 .section {
-
-    margin: var(--m-16);
     overflow: hidden;
     height: calc(100% - var(--header));
 }
 /*Estilo del scrollbar*/
 ::-webkit-scrollbar {
-        width:var(--m-8);
-        background-color: var(--header_dark);
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--color_second_light);
-        border-radius: 8px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background-color: var(--color_second);
-    }
-
-
+    width: var(--m-8);
+    background-color: var(--header_dark);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--color_second_light);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color_second);
+}
 /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
 @media (min-width: 599px) and (max-width: 1023px) {
     .section {
         margin: var(--m-24);
     }
-
     .grid__container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         width: 100%;
         column-gap: var(--m-16);
     }
-
     .content {
         grid-column-end: span 6;
     }
-
-    
 }
-
 /*------------ MEDIA QUERIES:Extra large devise ------------*/
 @media screen and (min-width: 1024px) {
     .section {
         flex-direction: column;
-        margin: var(--m-48);
+        margin: 0 var(--m-48);
     }
-
     .grid__container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         width: 100%;
         column-gap: var(--m-24);
     }
-
     .content {
         grid-column-end: span 12;
     }
-
-   
-
-    
-
-
 }

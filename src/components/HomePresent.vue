@@ -15,8 +15,12 @@
 </template>
 
 <script>
+import { initializeTyped } from '../config-type.js';
 export default {
   name: 'homePresent',
+  mounted() {
+    initializeTyped();
+  },
 }
 </script>
 

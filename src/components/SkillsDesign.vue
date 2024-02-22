@@ -6,7 +6,8 @@
 
 <script>
      import CardSkills from '@/components/CardSkill.vue'
-    export default {
+    
+     export default {
         name:'skillsDesign',
         data () {
             return {

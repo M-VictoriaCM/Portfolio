@@ -1,17 +1,21 @@
+
 <template>
     <header class="content header">
         <nav class="nav__content ">
-            <div class="nav__header_icon">
-                <img src="../../public/logo_sitio_web_victoria.png" alt="logo" class="nav_img">
-                <a href="home.html" class="nav_logo">ictoria</a>
-            </div>
+            <router-link class="nav_logo" to="/">
+                <div class="nav__header_icon">
+                    <img src="../../public/logo_sitio_web_victoria.png" alt="logo" class="nav_img">
+                    <p class="title_in">ictoria</p>
+                </div>
+
+            </router-link>
             <!--            <btn-bar></btn-bar>-->
-            <div class="bars__menu">
+            <div class="bars__menu" @click="toggleMenu">
                 <span class="line1__bars-menu"></span>
                 <span class="line2__bars-menu"></span>
                 <span class="line3__bars-menu"></span>
             </div>
-            <div class="container-menu">
+            <div class="container-menu"  :class="{ 'container-menu__visible': isMenuVisible }">
 
                 <div class="nav__menu" id="nav-menu">
                     <!--Componente Menu-->
@@ -40,19 +44,31 @@
 </template>
 
 <script>
-    import NavBar from '@/components/NavBar'
+import { animateMenu } from '../animation.js';
+import NavBar from '@/components/NavBar';
 
 
-    export default {
-        name: 'Header',
-        components: {
-            NavBar,
+export default {
+    name: 'Header',
+    components: {
+        NavBar,
+    },
+    data() {
+        return {
+            isMenuVisible: false,
+        };
+    },
+    methods: {
+        toggleMenu() {
+            animateMenu();
+            this.isMenuVisible = !this.isMenuVisible;
         },
-    };
+    },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-    @import "../assets/css/components/header.css";
-    @import "../assets/css/components/btnBar.css";
+<style scoped>
+@import "../assets/css/components/header.css";
+@import "../assets/css/components/btnBar.css";
 </style>

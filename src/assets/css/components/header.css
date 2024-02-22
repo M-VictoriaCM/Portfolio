@@ -15,6 +15,17 @@
     .nav__menu {
         display: flex;
     }
+    .router-link-exact-active.nav_logo{
+        background-color: transparent;
+        border: none;
+    }
+    .title_in{
+        color: var(--color_second);
+        text-align: left;
+        font-size: var(--m-24);
+        line-height: var(--m-24);
+        font-weight: 900;
+    }
 
     .nav__content {
         justify-content: space-between;
@@ -23,8 +34,13 @@
     }
 
     .nav_img {
-        width: var(--m-44);
-        height: var(--m-44);
+        width: var(--m-32);
+        height: var(--m-32);
+    }
+    .nav__header_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
 
@@ -49,10 +65,14 @@
             justify-content: space-between;
         }
     }
-
-    .nav_logo {
-        display: none;
+    .title_in{
+        color: antiquewhite;
     }
+    .router-link-exact-active.nav_logo{
+        background-color: transparent;
+    }
+
+   
 
     #checkbox {
         display: none;
@@ -130,10 +150,6 @@
             display: block;
         }
 
-        .nav__logo {
-            display: none;
-        }
-
         .nav__content {
             flex-direction: row;
             justify-content: space-between;
@@ -202,19 +218,11 @@
             height: var(--m-48);
         }
 
-        .nav__header_icon {
-            flex-direction: row;
-            align-items: center;
-        }
-
-        .nav_logo {
-            color: var(--color_second);
-            text-align: left;
+        .title_in{
             font-size: var(--m-32);
             line-height: var(--m-32);
             font-weight: 900;
         }
-
         .toggler {
             width: 3.6rem;
             height: 1.625rem;
