@@ -7,17 +7,17 @@
 📍**Adaptabilidad y Responsividad:** Mi portafolio está diseñado para verse y funcionar bien en una variedad de dispositivos y tamaños de pantalla, desde computadoras de escritorio hasta dispositivos móviles.  <br>
 
 # Demo:
-**!Phone 13 PRO** (390px x 844px) <br>
-![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/a29019aa-156a-441b-b151-252158bf3f66)
+**!Phone 13 PRO** (390px x 844px)<br>
+![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/a29019aa-156a-441b-b151-252158bf3f66) <br>
 
-**Galaxy Z Flip 3** (360px x 880px) <br>
-![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/ea359f39-948e-4df6-a83c-4645a525bb48)
-
+**Galaxy Z Flip 3** (360px x 880px)<br>
+![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/ea359f39-948e-4df6-a83c-4645a525bb48) <br>
+ 
 **!Pad PRO 11** (834px x 1194px) <br>
-![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/bf07a64c-d19b-45df-9c20-aa27bbeaaa36)
+![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/bf07a64c-d19b-45df-9c20-aa27bbeaaa36) <br>
 
 **Macbook Air** (1280px x 800px) <br>
-![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/7fb5987b-76e5-4521-8757-50b9c00a29ff)
+![image](https://github.com/M-VictoriaCM/Portfolio/assets/70769530/7fb5987b-76e5-4521-8757-50b9c00a29ff) <br>
 
 # Tecnologías Utilizadas 🛠️
 * Vue.js
