@@ -20,17 +20,14 @@
         border: none;
     }
     .title_in{
-        color: var(--color_second);
-        text-align: left;
-        font-size: var(--m-24);
-        line-height: var(--m-24);
-        font-weight: 900;
+        display: none;
     }
 
     .nav__content {
         justify-content: space-between;
         align-items: center;
-        margin: 0 var(--m-16);
+        height: inherit;
+        margin: 0 var(--m-24);
     }
 
     .nav_img {
@@ -39,7 +36,8 @@
     }
     .nav__header_icon {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
 
@@ -66,13 +64,16 @@
         }
     }
     .title_in{
+        color: var(--color_second);
+        text-align: left;
+        font-size: var(--m-24);
+        line-height: var(--m-24);
+        font-weight: 900;
         color: antiquewhite;
     }
     .router-link-exact-active.nav_logo{
         background-color: transparent;
     }
-
-   
 
     #checkbox {
         display: none;
@@ -84,9 +85,10 @@
         height: var(--m-32);
         border: 2px solid var(--color_second);
         border-radius: 1.5625rem;
+        margin-top: 1rem;
+        margin-left: 1.5rem;
         position: relative;
         cursor: pointer;
-        margin: 1rem 0;
     }
 
     .ball,
@@ -130,11 +132,15 @@
 
     /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
     @media (min-width: 599px) and (max-width: 1023px) {
-
         .header,
         .nav__content,
         .container-menu {
             display: flex;
+        }
+        .title_in{
+            display: block;
+            padding-top: 1rem;
+            font-size: 2rem;
         }
 
         .header {
@@ -148,6 +154,12 @@
 
         .bars__menu {
             display: block;
+        }
+        .nav__header_icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
 
         .nav__content {
@@ -199,35 +211,45 @@
 
         .header {
             grid-column: 1/12;
+            height: 4rem;
         }
 
         .nav__content {
             flex-direction: row;
             height: inherit;
-            margin: 0 var(--m-48);
+            margin:0 var(--m-48);
         }
 
         .container-menu {
             flex-direction: row;
-            right: 0;
             align-content: center;
+            height: inherit;
+            margin: 0;
+            padding: 0;
         }
 
         .nav_img {
             width: var(--m-48);
             height: var(--m-48);
         }
+        .nav__header_icon{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
         .title_in{
+            display: block;
             font-size: var(--m-32);
             line-height: var(--m-32);
             font-weight: 900;
+            margin-top: 0.875rem;
         }
         .toggler {
             width: 3.6rem;
             height: 1.625rem;
             align-content: center;
-            margin: var(--m-24) 0;
+            margin-bottom: 1rem;
         }
 
         .ball {

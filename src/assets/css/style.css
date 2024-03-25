@@ -50,7 +50,6 @@
 }
 .content {
     grid-column-end: span 4;
-    /*    border: 1px solid white;*/
 }
 ul {
     list-style: none;

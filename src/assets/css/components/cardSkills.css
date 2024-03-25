@@ -15,9 +15,8 @@
 }
 
 .skills__info_container {
-    /* border: 1px solid var(--color_second); */
-    width: var(--m-72);
-    height: var(--m-72);
+    width: 52px;
+    height: 52px;
     background: var(--body_dark);
     border-radius: 50%;
     justify-content: center;
@@ -29,8 +28,8 @@
 
 .skills__info_container::before {
     content: "";
-    width: 74px;
-    height: 74px;
+    width: 56px;
+    height:56px;
     z-index: -1;
     border-radius: inherit;
     background-image: linear-gradient(var(--rotate), rgba(3, 212, 231, 1)0%, rgba(211, 2, 165, 1)100%);
@@ -49,7 +48,7 @@
 }
 
 .skills__img {
-    width: var(--m-44);
+    width: 32px;
     height: auto;
 }
 
