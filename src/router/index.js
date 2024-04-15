@@ -3,8 +3,6 @@ import {
     createWebHashHistory
 } from 'vue-router'
 import Home from '../views/Home.vue'
-import Login from '../views/Auth/Login.vue'
-import Register from '../views/Auth/Register.vue'
 
 const routes = [
     {
@@ -33,16 +31,7 @@ const routes = [
         name: '/portafolio',
         component: () => import( /* webpackChunkName: "portafolio" */ '../views/Contacto.vue')
     },
-    {
-        path: '/login',
-        name: 'login',
-        component: () => import( /* webpackChunkName: "login" */ '../views/Auth/Login.vue')
-    },
-    {
-        path: '/register',
-        name: 'register',
-        component: () => import( /* webpackChunkName: "register" */ '../views/Auth/Register.vue')
-    },
+    
 
 ]
 

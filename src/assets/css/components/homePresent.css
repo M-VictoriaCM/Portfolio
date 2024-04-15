@@ -14,7 +14,7 @@
     /* Animación del texto*/
     color: transparent;
     /*    -webkit-text-stroke: 1px var(--color_primary);*/
-    background: url(../../img/back2.png);
+    background: url(../../img/background_1.jpg);
     -webkit-background-clip: text;
     background-clip: text;
     background-position : 0 0;

@@ -7,7 +7,7 @@
                 <span class="typed"></span>
             </h3>
             <div class="" id="cadenas-texto">
-                <p class="typed-text">Estudiante de una Técnicatura Universitaria en Desarrollo de Aplicaciones Informáticas</p>
+                <p class="typed-text">Estudiante de Técnicatura Universitaria en Desarrollo de Aplicaciones Informáticas</p>
             </div>
         </div>
     </div>

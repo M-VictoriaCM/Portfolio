@@ -13,7 +13,7 @@
             <div class="home__img">
                 <div class="home__frame"></div>
                 <div class="home__frame-img">
-                    <img src="@/assets/img/hola.png" alt="avatar">
+                    <img src="@/assets/img/avatar1.png" alt="avatar">
                 </div>    
                 
             </div>

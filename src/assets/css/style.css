@@ -9,7 +9,7 @@
     --color_second_light: #5DDFEB;
     /* color body */
     --body_dark: #161A2E;
-    --header_dark: #09021A;
+    --header_dark: rgb(9, 2, 26);
     --color_font: #FBFBFE;
     --color_acent: #24C115;
     /* color iconos*/
