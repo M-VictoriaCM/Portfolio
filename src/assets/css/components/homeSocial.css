@@ -5,8 +5,12 @@
 }
 
 .home__social-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     margin: var(--m-16);
+    
 }
 
 .home__social-profile-content {
@@ -71,11 +75,10 @@
 
 /* Medias queries -----> small */
 @media screen and (max-width:320px) {
-
+    
     .home__social,
     .home__img {
-        margin: 0;
-        border:1px solid  #d302a5;
+        margin: .5rem;
     }
     .home__social-profile {
         margin: var(--m-8) 0;

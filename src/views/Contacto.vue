@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import { db } from '../utils/firebase.js';
 export default {
     name: 'Contacto',
     data() {
@@ -89,28 +90,34 @@ export default {
             const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return re.test(email);
         },
-        handleSubmit() {
+
+         async handleSubmit() {
             if (this.validateForm()) {
                 const formData = {
                     name: this.name,
                     subject: this.subject,
                     email: this.email,
                     message: this.message,
-                };
+                }
 
-                axios.post('YOUR_SERVER_URL', formData)
-                    .then(response => {
-                        console.log('Formulario enviado:', response.data);
-                        // Mostrar un mensaje de éxito al usuario
-                        this.resetForm();
-                    })
-                    .catch(error => {
-                        console.error('Error al enviar el formulario:', error);
-                        // Mostrar un mensaje de error al usuario
-                    });
+                try {
+                    await db.ref('menssages').add(formData);  // Aquí podría estar el error
+                    alert('Formulario enviado:');
+                    // Reset de formulario
+                    this.name = '';
+                    this.subject = '';
+                    this.email = '';
+                    this.message = '';
+                    this.nameErrors = [];
+                    this.subjectErrors = [];
+                    this.emailErrors = [];
+                    this.messageErrors = [];
+                } catch (error) {
+                    alert('Error al enviar el formulario', error);
+                }
             }
         }
-    }    
+    }
 }
 </script>
 

@@ -1,14 +1,17 @@
-import firebase from "firebase/app";
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAbXkm_ZwUQBNWqDvVOzoMAYeOkG7UrzUs",
-    authDomain: "portafolio-db37a.firebaseapp.com",
-    projectId: "portafolio-db37a",
-    storageBucket: "portafolio-db37a.appspot.com",
-    messagingSenderId: "809434417554",
-    appId: "1:809434417554:web:7a5f2ef86798713eb9994b",
-    measurementId: "G-C6V7L3NBX8"
+    apiKey: "AIzaSyAt8Zlkc1q69iAfeE5CrEoYeeclxB11odY",
+    authDomain: "vue-contact-form-7b6ff.firebaseapp.com",
+    projectId: "vue-contact-form-7b6ff",
+    storageBucket: "vue-contact-form-7b6ff.appspot.com",
+    messagingSenderId: "474687651782",
+    appId: "1:474687651782:web:36b1813bed93a6a14bbcc7"
   };
   
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  
+  export{ db };
